@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .nav {
   position: fixed;
   top: 20px;
@@ -15,14 +22,24 @@
 
 .hero {
   min-height: 100vh;
-  background-image: inherit;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .heroText {
-  padding-top: 40vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.35);
   text-align: center;
+  padding: 20px;
+}
+
+.heroText h1 {
+  font-size: 48px;
 }
 
 .section {
