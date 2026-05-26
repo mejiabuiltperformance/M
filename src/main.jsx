@@ -1,9 +1,21 @@
+import React from 'react'
+import { createRoot } from 'react-dom/client'
 import './style.css'
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1>MEJIA BUILT PERFORMANCE</h1>
+    <div style={{
+      background:'black',
+      color:'white',
+      height:'100vh',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      fontSize:'40px'
+    }}>
+      MEJIA BUILT PERFORMANCE
     </div>
   )
 }
+
+createRoot(document.getElementById('root')).render(<App />)
